@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.21",
+  "version": "1.0.0",
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "packageName": "com.contoso.projectmanagement",
+  "name": {
+    "short": "项目管理系统",
+    "full": "项目管理系统 - 离线版"
+  },
+  "developer": {
+    "name": "Paul",
+    "websiteUrl": "https://your-domain.com",
+    "privacyUrl": "https://your-domain.com/privacy",
+    "termsOfUseUrl": "https://your-domain.com/terms"
+  },
+  "description": {
+    "short": "项目、任务、看板、甘特图、日历、里程碑、团队管理",
+    "full": "一个轻量级项目管理系统，包含项目管理、任务管理、看板视图、日历视图、甘特图、里程碑管理和团队成员管理功能。数据存储在浏览器本地，无需后端服务。"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#0e7c86",
+  "staticTabs": [
+    {
+      "entityId": "pm-dashboard",
+      "name": "项目管理",
+      "contentUrl": "https://your-hosted-url/index.html",
+      "websiteUrl": "https://your-hosted-url/index.html",
+      "scopes": ["personal", "team", "groupChat"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [
+    "your-hosted-url.com",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com"
+  ]
+}
